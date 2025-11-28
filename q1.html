@@ -2,27 +2,28 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Domanda 1</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-question="q1">
 <div class="container">
-  <h2>Domanda 1</h2>
-  <p>Durante il riposo, ricordi traumatici pre-bellici interferiscono con la lucidità. Come reagisci?</p>
 
-  <div class="options">
-    <div class="opt">A. Sopprimo immediatamente</div>
-    <div class="opt">B. Analizzo e archivio</div>
-    <div class="opt">C. Ignoro i segnali</div>
-    <div class="opt">D. Trasformo in impulso operativo</div>
-  </div>
+<h2>Domanda 1</h2>
+<p>Durante il riposo, ricordi traumatici pre-bellici interferiscono con la lucidità. Come reagisci?</p>
 
-  <div class="nav">
-    <button class="btn" onclick="goTo('index')">Indietro</button>
-    <button class="btn" onclick="goTo('q2')">Avanti</button>
-  </div>
+<div class="options">
+  <div class="opt" data-value="A" onclick="selectOption('q1','A')">A. Sopprimo immediatamente</div>
+  <div class="opt" data-value="B" onclick="selectOption('q1','B')">B. Analizzo e archivio</div>
+  <div class="opt" data-value="C" onclick="selectOption('q1','C')">C. Ignoro i segnali</div>
+  <div class="opt" data-value="D" onclick="selectOption('q1','D')">D. Trasformo in impulso operativo</div>
+</div>
+
+<div class="nav">
+  <button class="btn" onclick="goTo('index')">Indietro</button>
+  <button class="btn" onclick="goTo('q2')">Avanti</button>
+</div>
+
 </div>
 <script src="script.js"></script>
 </body>
