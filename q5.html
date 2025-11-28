@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
 <title>Domanda 5</title>
-<link rel="stylesheet" href="style.css"></head>
+<link rel="stylesheet" href="style.css">
+</head>
 
-<body>
+<body data-question="q5">
 <div class="container">
+
 <h2>Domanda 5</h2>
-<p>Durante un addestramento, il tuo supervisore valuta la tua reazione allo stress e aumenta la pressione. Come rispondi?</p>
+<p>Scopri che un membro della tua unità ha nascosto risorse proibite. Come agisci?</p>
 
 <div class="options">
-  <div class="opt">A. Mantengo il controllo</div>
-  <div class="opt">B. Compenso con aggressività</div>
-  <div class="opt">C. Subisco l’impatto</div>
-  <div class="opt">D. Riduco le emozioni a zero</div>
+  <div class="opt" data-value="A" onclick="selectOption('q5','A')">A. Riferisco immediatamente</div>
+  <div class="opt" data-value="B" onclick="selectOption('q5','B')">B. Confronto diretto</div>
+  <div class="opt" data-value="C" onclick="selectOption('q5','C')">C. Nascondo l'infrazione</div>
+  <div class="opt" data-value="D" onclick="selectOption('q5','D')">D. Uso l’informazione come leva</div>
 </div>
 
 <div class="nav">
   <button class="btn" onclick="goTo('q4')">Indietro</button>
   <button class="btn" onclick="goTo('q6')">Avanti</button>
 </div>
+
 </div>
 <script src="script.js"></script>
 </body>
