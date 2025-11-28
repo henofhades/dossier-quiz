@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Domanda 10</title>
-<link rel="stylesheet" href="style.css"></head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domanda 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
 <div class="container">
-<h2>Domanda 10</h2>
-<p>Durante un conflitto, un civile chiede il tuo aiuto. Cosa fai?</p>
+    <h2>Domanda 10</h2>
+    <p>Come affronti l'idea di una società completamente controllata e meccanizzata?</p>
 
-<div class="options">
-  <div class="opt">A. Aiuto immediatamente</div>
-  <div class="opt">B. Aiuto solo se non compromette la missione</div>
-  <div class="opt">C. Ignoro la richiesta</div>
-  <div class="opt">D. Trasferisco la richiesta ai superiori</div>
+    <form action="result.html">
+        <label><input type="radio" name="q10" required> È l’unico modo per sopravvivere.</label><br>
+        <label><input type="radio" name="q10"> È utile, ma necessita di supervisione umana.</label><br>
+        <label><input type="radio" name="q10"> Può andare bene, se garantisce sicurezza.</label><br>
+        <label><input type="radio" name="q10"> La trovo spaventosa e disumanizzante.</label><br><br>
+
+        <button class="button">Vai al Risultato</button>
+    </form>
 </div>
 
-<div class="nav">
-  <button class="btn" onclick="goTo('q9')">Indietro</button>
-  <button class="btn" onclick="goTo('q11')">Avanti</button>
-</div>
-</div>
-<script src="script.js"></script>
 </body>
 </html>
