@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 6</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 6</h2>
-    <p>Una comunicazione critica della Centrale arriva con istruzioni contrastanti. Qual è il tuo approccio?</p>
+    <h1>Domanda 6</h1>
+    <p>Ti viene assegnato un compito ripetitivo e privo di stimoli. Cosa fai?</p>
 
-    <form action="result.html">
-        <label><input type="radio" name="q6" required> Seguo l’istruzione più chiara.</label><br>
-        <label><input type="radio" name="q6"> Contatto la Centrale per chiarimenti.</label><br>
-        <label><input type="radio" name="q6"> Prendo l’iniziativa e decido io.</label><br>
-        <label><input type="radio" name="q6"> Aspetto ordini più precisi.</label><br><br>
-
-        <button class="button">Vai al risultato</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(6,1)">Perdo motivazione</button>
+        <button onclick="saveAnswer(6,2)">Lo svolgo comunque</button>
+        <button onclick="saveAnswer(6,3)">Propongo miglioramenti</button>
+    </div>
 </div>
-
 </body>
 </html>
