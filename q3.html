@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+<meta charset="UTF-8">
 <title>Domanda 3</title>
-<link rel="stylesheet" href="style.css"></head>
+<link rel="stylesheet" href="style.css">
+</head>
 
-<body>
+<body data-question="q3">
 <div class="container">
+
 <h2>Domanda 3</h2>
 <p>Un compagno crolla psicologicamente durante un pattugliamento. Come reagisci?</p>
 
 <div class="options">
-  <div class="opt">A. Procedo senza intervenire</div>
-  <div class="opt">B. Richiedo sostituzione</div>
-  <div class="opt">C. Supporto minimo</div>
-  <div class="opt">D. Testo la sua resistenza</div>
+  <div class="opt" data-value="A" onclick="selectOption('q3','A')">A. Procedo senza intervenire</div>
+  <div class="opt" data-value="B" onclick="selectOption('q3','B')">B. Richiedo sostituzione</div>
+  <div class="opt" data-value="C" onclick="selectOption('q3','C')">C. Supporto minimo</div>
+  <div class="opt" data-value="D" onclick="selectOption('q3','D')">D. Testo la sua resistenza</div>
 </div>
 
 <div class="nav">
   <button class="btn" onclick="goTo('q2')">Indietro</button>
   <button class="btn" onclick="goTo('q4')">Avanti</button>
 </div>
+
 </div>
 <script src="script.js"></script>
 </body>
