@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 15</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 15</h2>
-    <p>In una società completamente controllata, quale ruolo ti senti più adatto a ricoprire?</p>
+    <h1>Domanda 15</h1>
+    <p>La tua unità è in pericolo imminente. Cosa fai?</p>
 
-    <form action="result.html">
-        <label><input type="radio" name="q15" required> Supervisore dell’ordine e della disciplina.</label><br>
-        <label><input type="radio" name="q15"> Analista delle risorse e della sicurezza.</label><br>
-        <label><input type="radio" name="q15"> Tecnico di supporto e manutenzione.</label><br>
-        <label><input type="radio" name="q15"> Funzionario amministrativo e logistico.</label><br><br>
-
-        <button class="button">Vai al Risultato</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(15,1)">Penso solo alla sopravvivenza</button>
+        <button onclick="saveAnswer(15,2)">Cerco di proteggere i più deboli</button>
+        <button onclick="saveAnswer(15,3)">Organizzo un piano</button>
+    </div>
 </div>
-
 </body>
 </html>
