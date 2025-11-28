@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Domanda 15</title>
-<link rel="stylesheet" href="style.css"></head>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domanda 15</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+
 <div class="container">
-<h2>Domanda 15</h2>
-<p>Il test si conclude con una valutazione personale: come ti percepisci nel ruolo assegnato?</p>
+    <h2>Domanda 15</h2>
+    <p>In una società completamente controllata, quale ruolo ti senti più adatto a ricoprire?</p>
 
-<div class="options">
-  <div class="opt">A. Totalmente adatto</div>
-  <div class="opt">B. Adatto con riserve</div>
-  <div class="opt">C. Parzialmente adatto</div>
-  <div class="opt">D. Non adatto</div>
+    <form action="result.html">
+        <label><input type="radio" name="q15" required> Supervisore dell’ordine e della disciplina.</label><br>
+        <label><input type="radio" name="q15"> Analista delle risorse e della sicurezza.</label><br>
+        <label><input type="radio" name="q15"> Tecnico di supporto e manutenzione.</label><br>
+        <label><input type="radio" name="q15"> Funzionario amministrativo e logistico.</label><br><br>
+
+        <button class="button">Vai al Risultato</button>
+    </form>
 </div>
 
-<div class="nav">
-  <button class="btn" onclick="goTo('q14')">Indietro</button>
-  <button class="btn" onclick="goTo('result')">Concludi</button>
-</div>
-</div>
-<script src="script.js"></script>
 </body>
 </html>
