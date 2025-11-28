@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Domanda 4</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Domanda 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
-<body data-question="q4">
+<body class="dossier">
 <div class="container">
+    <h1>Domanda 4</h1>
+    <p>Una figura sconosciuta ti osserva a distanza. Cosa fai?</p>
 
-<h2>Domanda 4</h2>
-<p>Durante una tempesta radioattiva, il tuo equipaggiamento inizia a malfunzionare. Qual è la tua priorità?</p>
-
-<div class="options">
-  <div class="opt" data-value="A" onclick="selectOption('q4','A')">A. Ripararlo subito</div>
-  <div class="opt" data-value="B" onclick="selectOption('q4','B')">B. Segnalare la criticità</div>
-  <div class="opt" data-value="C" onclick="selectOption('q4','C')">C. Chiedere supporto</div>
-  <div class="opt" data-value="D" onclick="selectOption('q4','D')">D. Continuare ignorando il problema</div>
+    <div class="options">
+        <button onclick="saveAnswer(4,1)">Fuggo</button>
+        <button onclick="saveAnswer(4,2)">Resto vigile</button>
+        <button onclick="saveAnswer(4,3)">Mi avvicino per capire</button>
+    </div>
 </div>
-
-<div class="nav">
-  <button class="btn" onclick="goTo('q3')">Indietro</button>
-  <button class="btn" onclick="goTo('q5')">Avanti</button>
-</div>
-
-</div>
-<script src="script.js"></script>
 </body>
 </html>
