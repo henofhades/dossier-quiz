@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 8</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 8</h2>
-    <p>Un sistema meccanizzato della Centrale inizia a dare segnali anomali. Come reagisci?</p>
+    <h1>Domanda 8</h1>
+    <p>Una risorsa vitale è insufficiente per tutti. Come agisci?</p>
 
-    <form action="q9.html">
-        <label><input type="radio" name="q8" required> Spengo la macchina e analizzo il guasto.</label><br>
-        <label><input type="radio" name="q8"> Avviso immediatamente gli operatori.</label><br>
-        <label><input type="radio" name="q8"> Continuo ad usarla finché possibile.</label><br>
-        <label><input type="radio" name="q8"> Mantengo le distanze: potrebbe essere pericolosa.</label><br><br>
-
-        <button class="button">Prosegui</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(8,1)">Mi sacrifico</button>
+        <button onclick="saveAnswer(8,2)">Propongo un compromesso</button>
+        <button onclick="saveAnswer(8,3)">Mi assicuro il necessario</button>
+    </div>
 </div>
-
 </body>
 </html>
