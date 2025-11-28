@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 12</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 12</h2>
-    <p>Se la Centrale ti ordinasse di assumere un ruolo ad altissimo rischio, come reagiresti?</p>
+    <h1>Domanda 12</h1>
+    <p>Durante una perquisizione trovi un oggetto proibito. Che fai?</p>
 
-    <form action="q13.html">
-        <label><input type="radio" name="q12" required> Accetto: il dovere viene prima di tutto.</label><br>
-        <label><input type="radio" name="q12"> Chiedo spiegazioni o una valutazione aggiuntiva.</label><br>
-        <label><input type="radio" name="q12"> Accetto, ma solo con protezioni adeguate.</label><br>
-        <label><input type="radio" name="q12"> Cerco di evitare l'incarico.</label><br><br>
-
-        <button class="button">Prosegui</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(12,1)">Lo ignoro</button>
+        <button onclick="saveAnswer(12,2)">Lo segnalo</button>
+        <button onclick="saveAnswer(12,3)">Lo consegno solo se necessario</button>
+    </div>
 </div>
-
 </body>
 </html>
