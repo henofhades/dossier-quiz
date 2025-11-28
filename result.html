@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Risultato</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Risultato</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
-<body data-question="">
+<body class="dossier">
 <div class="container">
-<h2>Risultato Finale</h2>
+    <h1>RISULTATO DEL DOSSIER</h1>
 
-<p>Punteggio totale: <span id="score"></span></p>
+    <p id="scoreText">Calcolo del profilo in corso...</p>
+    <p id="roleText"></p>
 
-<div id="outcome" style="margin-top:20px;"></div>
-
-<div class="nav">
-    <button class="btn" onclick="goTo('index')">Ricomincia</button>
-</div>
+    <button onclick="location.href='index.html'">Ricomincia</button>
 </div>
 
-<script src="script.js"></script>
-<script>generateResult();</script>
+<script>
+    calculateResult();
+</script>
 
 </body>
 </html>
