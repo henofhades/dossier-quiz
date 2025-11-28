@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Domanda 3</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Domanda 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
-<body data-question="q3">
+<body class="dossier">
 <div class="container">
+    <h1>Domanda 3</h1>
+    <p>Sei sotto stress dopo molte ore senza cibo. Cosa fai?</p>
 
-<h2>Domanda 3</h2>
-<p>Un compagno crolla psicologicamente durante un pattugliamento. Come reagisci?</p>
-
-<div class="options">
-  <div class="opt" data-value="A" onclick="selectOption('q3','A')">A. Procedo senza intervenire</div>
-  <div class="opt" data-value="B" onclick="selectOption('q3','B')">B. Richiedo sostituzione</div>
-  <div class="opt" data-value="C" onclick="selectOption('q3','C')">C. Supporto minimo</div>
-  <div class="opt" data-value="D" onclick="selectOption('q3','D')">D. Testo la sua resistenza</div>
+    <div class="options">
+        <button onclick="saveAnswer(3,1)">Cedo alla frustrazione</button>
+        <button onclick="saveAnswer(3,2)">Cerco di mantenere la calma</button>
+        <button onclick="saveAnswer(3,3)">Pianifico una soluzione immediata</button>
+    </div>
 </div>
-
-<div class="nav">
-  <button class="btn" onclick="goTo('q2')">Indietro</button>
-  <button class="btn" onclick="goTo('q4')">Avanti</button>
-</div>
-
-</div>
-<script src="script.js"></script>
 </body>
 </html>
