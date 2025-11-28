@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 10</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 10</h2>
-    <p>Come affronti l'idea di una società completamente controllata e meccanizzata?</p>
+    <h1>Domanda 10</h1>
+    <p>Sei costretto a collaborare con una persona ostile. Come ti comporti?</p>
 
-    <form action="result.html">
-        <label><input type="radio" name="q10" required> È l’unico modo per sopravvivere.</label><br>
-        <label><input type="radio" name="q10"> È utile, ma necessita di supervisione umana.</label><br>
-        <label><input type="radio" name="q10"> Può andare bene, se garantisce sicurezza.</label><br>
-        <label><input type="radio" name="q10"> La trovo spaventosa e disumanizzante.</label><br><br>
-
-        <button class="button">Vai al Risultato</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(10,1)">Rimango passivo</button>
+        <button onclick="saveAnswer(10,2)">Cerco un equilibrio</button>
+        <button onclick="saveAnswer(10,3)">Impongo le mie condizioni</button>
+    </div>
 </div>
-
 </body>
 </html>
