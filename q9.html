@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 9</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 9</h2>
-    <p>Ti viene ordinato di trasferirti in una zona contaminata temporaneamente. Qual è la tua risposta?</p>
+    <h1>Domanda 9</h1>
+    <p>Il tuo gruppo è demoralizzato. Cosa fai?</p>
 
-    <form action="q10.html">
-        <label><input type="radio" name="q9" required> Obbedisco senza esitazioni.</label><br>
-        <label><input type="radio" name="q9"> Chiedo spiegazioni prima di procedere.</label><br>
-        <label><input type="radio" name="q9"> Accetto, ma con grande cautela.</label><br>
-        <label><input type="radio" name="q9"> Cerco di evitarlo trovando un ruolo alternativo.</label><br><br>
-
-        <button class="button">Prosegui</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(9,1)">Mi isolo</button>
+        <button onclick="saveAnswer(9,2)">Cerco di motivarli</button>
+        <button onclick="saveAnswer(9,3)">Prendo il comando</button>
+    </div>
 </div>
-
 </body>
 </html>
