@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 11</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 11</h2>
-    <p>Dopo un evento traumatico, qual è il tuo modo naturale di recuperare lucidità?</p>
+    <h1>Domanda 11</h1>
+    <p>Un superiore ti assegna un compito impossibile nei tempi richiesti. Come reagisci?</p>
 
-    <form action="q12.html">
-        <label><input type="radio" name="q11" required> Mi isolo e analizzo ciò che è accaduto.</label><br>
-        <label><input type="radio" name="q11"> Parlo con qualcuno di fidato.</label><br>
-        <label><input type="radio" name="q11"> Torno subito a lavorare per distrarmi.</label><br>
-        <label><input type="radio" name="q11"> Cerco di non pensarci e mi butto su attività fisiche.</label><br><br>
-
-        <button class="button">Prosegui</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(11,1)">Mi scoraggio</button>
+        <button onclick="saveAnswer(11,2)">Cerco aiuto</button>
+        <button onclick="saveAnswer(11,3)">Trovo una strada alternativa</button>
+    </div>
 </div>
-
 </body>
 </html>
