@@ -2,24 +2,26 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Risultato</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-question="">
 <div class="container">
-  <h2>Risultato Finale</h2>
-  <p>Hai completato il test.</p>
+<h2>Risultato Finale</h2>
 
-  <div class="result">
-    <p>I risultati completi verranno implementati in futuro.</p>
-  </div>
+<p>Punteggio totale: <span id="score"></span></p>
 
-  <div class="nav">
-    <button class="btn" onclick="goTo('index')">Torna all'inizio</button>
-  </div>
+<div id="outcome" style="margin-top:20px;"></div>
+
+<div class="nav">
+    <button class="btn" onclick="goTo('index')">Ricomincia</button>
 </div>
+</div>
+
 <script src="script.js"></script>
+<script>generateResult();</script>
+
 </body>
 </html>
