@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domanda 13</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-
+<body class="dossier">
 <div class="container">
-    <h2>Domanda 13</h2>
-    <p>Il tuo team deve prendere una decisione critica, ma c’è disaccordo interno. Cosa fai?</p>
+    <h1>Domanda 13</h1>
+    <p>Un membro del gruppo si rifiuta di collaborare. Come agisci?</p>
 
-    <form action="q14.html">
-        <label><input type="radio" name="q13" required> Cerco mediazione per trovare un accordo.</label><br>
-        <label><input type="radio" name="q13"> Impongo una decisione rapida.</label><br>
-        <label><input type="radio" name="q13"> Lascio scegliere al responsabile più esperto.</label><br>
-        <label><input type="radio" name="q13"> Valuto entrambe le opzioni e scelgo la più logica.</label><br><br>
-
-        <button class="button">Prosegui</button>
-    </form>
+    <div class="options">
+        <button onclick="saveAnswer(13,1)">Mi arrendo</button>
+        <button onclick="saveAnswer(13,2)">Cerco dialogo</button>
+        <button onclick="saveAnswer(13,3)">Uso autorità</button>
+    </div>
 </div>
-
 </body>
 </html>
