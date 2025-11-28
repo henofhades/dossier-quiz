@@ -1,1 +1,30 @@
-body { background: #222; color: #eee; font-family: monospace; }
+/* style.css */
+body {
+  background: #111;
+  color: #eee;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+}
+
+.header h1 {
+  margin: 0;
+  color: #c22;
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.options .opt {
+  background: #222;
+  padding: 10px;
+  border: 1px solid
